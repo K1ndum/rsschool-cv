@@ -55,9 +55,14 @@ body {
     flex-direction: column;
     line-height: 20px;
     color: honeydew;
-    padding: 70px 40px 10px 40px;
+    padding: 80px 40px 10px 50px;
     margin: 0 90px 0 40px;
 }
+
+.about__contacts ul li {
+    padding: 5px 0 5px 0;
+}
+
 .about__telegram {
     margin: 10px;
 }
