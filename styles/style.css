@@ -1,0 +1,233 @@
+body {
+    background: url(https://klv-oboi.by/img/gallery/56/thumbs/thumb_l_25288.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__header {
+    text-align: left;
+    font-size: 17px;
+}
+.about {
+    background: rgb(255, 255, 255);
+    max-width: 1080px;
+    margin: 0px auto;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+}
+
+.about__me {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 70px 40px 10px 40px;
+    margin: 0 0 0 40px;
+}
+.about__me_name {
+    margin: 10px;
+    font-size: 50px;
+}
+
+.about__me_front-end::after {
+    display: block;
+    width: 40px;
+    content: '';
+    position: relative;
+    border-bottom: 3px solid rgb(61, 115, 196);
+    top: 25px; 
+}
+.about__me_front-end {
+    margin: 10px;
+    background: rgb(61, 115, 196);
+    padding: 5px;
+    width: 199px;
+    color: honeydew;
+}
+.about__me_text {
+    line-height: 20px;
+    margin: 25px 0 0 10px;
+}
+.about__contacts {
+    width: 20%;
+    background: rgb(61, 115, 196);
+    flex-direction: column;
+    line-height: 20px;
+    color: honeydew;
+    padding: 70px 40px 10px 40px;
+    margin: 0 90px 0 40px;
+}
+.about__telegram {
+    margin: 10px;
+}
+.about__phone {
+    margin: 10px;
+}
+.about__email {
+    margin: 10px;
+}
+
+.main {
+    text-align: left;
+    font-size: 17px;
+}
+
+.main__content {
+    background: rgb(255, 255, 255);
+    max-width: 1080px;
+    margin: 0px auto;
+}
+.content {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content__left {
+    width: 40%;
+    flex-direction: column;
+    padding: 30px 40px 10px 40px;
+    margin: 0 0 0 50px;
+}
+.photo img{
+    width: 99%;
+}
+.content__right {
+    width: 60%;
+    flex-direction: column;
+    padding: 30px 40px 10px 40px;
+    margin: 0 40px 0 0;
+}
+
+.item__title {
+    padding: 20px 0 20px 0;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.item__title::after {
+    display: block;
+    width: 40px;
+    content: '';
+    position: relative;
+    border-bottom: 3px solid rgb(61, 115, 196);
+    top: 17px; 
+}
+
+.item__body {
+    margin: 10px 0 0 0;
+    line-height: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.item img {
+    
+    width: 50%;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer__row {
+    flex-basis: 100%;
+    background: rgb(86, 87, 88);
+    max-width: 1080px;
+    margin: 0 auto;
+    font-family: 17px;
+    color: honeydew;
+    text-transform: uppercase;
+}
+
+.content__footer {
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.github {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+}
+
+.logo__github {
+    flex-basis: 5%;
+    padding: 10px;
+}
+
+.logo__github img {
+    width: 80%;
+}
+
+.text{
+    padding: 27px 10px 10px 10px;
+}
+
+.rs-school {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.logo__rs {
+    flex-basis: 14%;
+    padding: 10px;
+}
+
+.logo__rs img {
+    width: 80%;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
