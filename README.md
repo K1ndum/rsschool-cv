@@ -1,0 +1,1 @@
+[https://k1ndum.github.io/rsschool-cv/cv](https://k1ndum.github.io/rsschool-cv/cv)
