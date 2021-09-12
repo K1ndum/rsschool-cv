@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV K1ndum</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+
+    <nav class="nav__cv" id="top">
+      <div class="navigation">
+        <div class="conteiner">
+          <ul class="list">
+            <li><a href="#INTERESTS">INTERESTS</a></li>
+            <li><a href="#EDUCATION">EDUCATION</a></li>
+            <li><a href="#EXPERTISE">EXPERTISE</a></li>
+            <li><a href="#ABOUT ME">ABOUT ME</a></li>
+            <li><a href="#EXPERIENCE">EXPERIENCE</a></li>
+            <li><a href="#EXEMPLE CODE">EXEMPLE CODE</a></li>
+            <li><a href="#MY PROJECT">MY PROJECT</a></li>
+          </ul>
+        </div>
+        <div class="hidden">
+          <button class="close" onclick="w3_close()">
+             &times;
+          </button>
+          <button class="open" onclick="w3_open()">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="main__header">
+      <div class="about">
+        <div class="conteiner">
+          <div class="about__me">
+            <div class="about__me_name"><h1>Alexander Petrov</h1></div>
+            <div class="about__me_front-end">FRONT-END DEVELOPER</div>
+            <div class="about__me_text">
+              <i>Concerning that we can’t know everything and can’t learn
+              everything, that can be learned, we must know just a little about
+              everything.</i>
+            </div>
+          </div>
+          <div class="about__contacts">
+            <ul>
+              <li>Telegram <br />
+                <a href="https://t.me/Kindum"> K1ndum </a>
+              </li>
+              <li>Phone <br />
+                +375(29)877-49-30
+              </li>
+              <li>Email <br />
+                kindum98@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__content">
+        <div class="content">
+
+          <section class="content__left">
+            <div class="photo">
+              <img src="images/content/K1ndum.jpg" alt="K1ndum" />
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="INTERESTS"><h3>INTERESTS</h3></div>
+                <div class="item__body">
+                  <div class="item">
+                    <div class="listening">
+                      <img src="images/icone/listening.png" alt="listening" />
+                    </div>
+                    <div class="artist">
+                      <img src="images/icone/artist.png" alt="artist" />
+                    </div>
+                    <div class="hiking">
+                      <img src="images/icone/hiking.png" alt="hiking" />
+                    </div>
+                    <div class="study">
+                      <img src="images/icone/study.png" alt="study" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="EDUCATION"><h3>EDUCATION</h3></div>
+                <div class="item__body">
+                  <b>University</b>: Belarusian National Technical University (BNTU) <br />
+                  <b>Faculty</b>: Transport Communications (FTC)<br />
+                  <b>Department</b>: Design and construction of highways and airfields <br />
+                  <b>Speciality</b>: Design engineer <br />
+                  <i>2015 - 2020</i> <br />
+                </div>
+              </div>
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="EXPERTISE"><h3>EXPERTISE</h3></div>
+                <div class="item__body">
+                  <ul>
+                    <li>Java Script</li>
+                    <li>HTML, CSS</li>
+                    <li>Photoshop</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="content__right">
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="ABOUT ME"><h3>ABOUT ME</h3></div>
+                <div class="item__body">
+                  My aim is accumulated knowledge, learn my self and develop my
+                  spirit. Inters to everything new make me learn faster and
+                  develop better. Persistence and self confidence help me not to
+                  brake in hard moments of ma life.
+                </div>
+              </div>
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="EXPERIENCE"><h3>EXPERIENCE</h3></div>
+                <div class="item__body">
+                  During this time I could create adaptive site for diploma
+                  project. Learn the basics of HTML, CSS and JS. I also study
+                  framework of Vue.js. I have higher engineering education. I
+                  attended the courses STEP during five mounse.
+                </div>
+              </div>
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="EXEMPLE CODE"><h3>EXEMPLE CODE</h3></div>
+                <div class="item__body">
+                  <pre class="code_block">
+                    <code>
+function revrot(str, sz) {
+  if (sz === 0 || str === '') {
+    return ''
+  }
+  let regexp = new RegExp('\\d{' +sz+ '}', 'g');
+  let arr = str.match(regexp)
+  if (arr === null) {
+    return ''
+  }
+  let arrayP;
+  let arrEnd = [];
+  for (let i = 0; i < arr.length; i++) {
+    let sum = 0;
+    arrayP = arr[i].split('');
+    let array = arr[i].split('');
+    array = array.map((num) => Math.pow(num, 3));
+    sum = array.reduce((sum, num) => sum+=num);
+    if (sum % 2 == 0) {
+      arrEnd.push(arrayP.reverse().join(''))
+    } else {
+      arrayP.push(arrayP[0]);
+      arrayP.shift();
+      arrEnd.push(arrayP.join(''));
+    }
+  }
+  return (arrEnd.join(''));
+}
+                      </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title"><h3>LANGUAGE</h3></div>
+                <div class="item__body">
+                  My english knowledge level is A1. But it isn't limit ;)
+                </div>
+              </div>
+            </div>
+
+            <div class="columns__item">
+              <div class="item__row">
+                <div class="item__title" id="MY PROJECT"><h3>MY PROJECT</h3></div>
+                <div class="item__body">
+                  <ul class="project">
+                    <li><a href="https://k1ndum.github.io/DrumKit/"><img src="images/content/DrumKit.jpg" alt="CustomVideoPlayer" width="400px" height="180px" alt="DrumKit"></a></li>
+                    <li><a href="https://k1ndum.github.io/DrumKit/">Drum Kit</a></li>
+                    <li><a href="https://k1ndum.github.io/custom-video-player/"><img src="images/content/Player.jpg" alt="CustomVideoPlayer" width="400px" height="180px"></a></li>
+                    <li><a href="https://k1ndum.github.io/custom-video-player/">Custom Video Player</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="content__footer">
+          <div class="github">
+            <div class="logo__github">
+              <a href="https://github.com/K1ndum"><img src="https://cdn.worldvectorlogo.com/logos/github-icon.svg" alt="K1ndum"></a>
+            </div>
+            <div class="logo__rs">
+              <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="logo__rs"></a>
+            </div>
+            <div class="text"> 
+              <a href="#top">&#8593; Alexander Petrov &#8593;</a>
+            </div>
+            <div class="text">
+              2021
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function w3_open() {
+        document.querySelector(".list").style.display = "block";
+        document.querySelector(".open").style.display = "none";
+        document.querySelector(".close").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.querySelector(".list").style.display = "none";
+        document.querySelector(".close").style.display = "none";
+        document.querySelector(".open").style.display = "block";
+      }
+      </script>
+  </body>
+</html>
