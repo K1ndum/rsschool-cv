@@ -293,6 +293,11 @@ pre {
     font-weight: bold;
 }
 
+.img_project img{
+    width: 400px;
+    height: 180px;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -468,9 +473,18 @@ table {
     .about__contacts ul li{
         padding: 5px 10px;
     }
+
+    .img_project img{
+        width: 300px;
+        height: 135px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
 }    
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 423px) {
     .logo__github {
         flex-basis: 20%;
         padding: 5px;
@@ -482,6 +496,22 @@ table {
     }
 
     .text {
+        font-size: 15px;
         padding: 10px 5px 10px 5px;
+    }
+}    
+
+@media screen and (max-width: 320px) {
+    .img_project img{
+        width: 220px;
+        height: 100px;
+    }
+
+    .about__me_name {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 10px;
     }
 }    
