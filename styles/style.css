@@ -26,6 +26,7 @@ button {
   font-size: x-large;
   color: white;
   background-color: transparent;
+  transition: .2s linear;
 }
 
 button:hover {
@@ -46,7 +47,8 @@ button:hover {
 
 .list li a {
     text-decoration: none;
-    color: white
+    color: white;
+    transition: .2s linear;
 }
 
 .navigation ul li a:hover {
